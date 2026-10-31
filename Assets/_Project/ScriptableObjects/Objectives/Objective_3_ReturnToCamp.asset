@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49af82d49d9a89549945a31a34e28a3a, type: 3}
+  m_Name: Objective_3_ReturnToCamp
+  m_EditorClassIdentifier: Assembly-CSharp::CampfireAdventure.Objectives.ActionObjective
+  id: return_to_camp
+  title: Return to the campsite
+  instruction: Carry your wood and stones back to the campfire.
+  completionMessage: Back at camp. The sun is setting...
+  blockedHint: Head back to camp first.
+  unlocksActions: 05000000
+  action: 5
