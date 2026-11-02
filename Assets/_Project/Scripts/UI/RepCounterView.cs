@@ -34,7 +34,11 @@ namespace CampfireAdventure.UI
             if (exercise != null) exercise.RepCompleted -= OnRep;
         }
 
-        private void OnRep(int total) => popTimer = popSeconds;
+        private void OnRep(int total)
+        {
+            popTimer = popSeconds;
+            CampfireAdventure.Audio.UiAudioPlayer.Instance?.PlayRep();
+        }
 
         private void Update()
         {

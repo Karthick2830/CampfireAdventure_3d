@@ -25380,7 +25380,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &149873669
 RectTransform:
   m_ObjectHideFlags: 0
@@ -312224,6 +312224,7 @@ MonoBehaviour:
   hover: {fileID: 8300000, guid: 94a0b32045c013a4ca5fd4efc9a3e945, type: 3}
   click: {fileID: 8300000, guid: 54706edcb84528c4fb824638d19d629a, type: 3}
   back: {fileID: 8300000, guid: 875de099fe4041943bb098d2e04404a0, type: 3}
+  rep: {fileID: 8300000, guid: f316c7368121184479179fa24a339a55, type: 3}
   volume: 0.6
 --- !u!1001 &1578278853
 PrefabInstance:

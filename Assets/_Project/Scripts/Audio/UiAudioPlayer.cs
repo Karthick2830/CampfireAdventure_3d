@@ -16,6 +16,7 @@ namespace CampfireAdventure.Audio
         [SerializeField, Tooltip("PLACEHOLDER")] private AudioClip hover;
         [SerializeField, Tooltip("PLACEHOLDER")] private AudioClip click;
         [SerializeField, Tooltip("PLACEHOLDER")] private AudioClip back;
+        [SerializeField, Tooltip("PLACEHOLDER: played each time the exercise counts a rep.")] private AudioClip rep;
         [SerializeField, Range(0f, 1f)] private float volume = 0.6f;
 
         private AudioSource source;
@@ -32,6 +33,7 @@ namespace CampfireAdventure.Audio
         public void PlayHover() => Play(hover, 0.5f);
         public void PlayClick() => Play(click, 1f);
         public void PlayBack() => Play(back, 1f);
+        public void PlayRep() => Play(rep, 1.2f);
 
         private void Play(AudioClip clip, float scale)
         {
