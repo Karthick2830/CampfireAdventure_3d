@@ -33,6 +33,9 @@ namespace CampfireAdventure.GameInput
             new KeyBinding { key = Key.Digit7, action = GameActionType.IgniteCampfire },
         };
 
+        [SerializeField, Tooltip("Turn off to stop the 1-7 keys requesting actions (the exercise reps do it instead). E and F5 keep working.")]
+        private bool actionKeysEnabled = true;
+
         [SerializeField, Tooltip("Contextual key: performs the action of the interactable the explorer is standing at.")]
         private Key interactKey = Key.E;
 
@@ -76,6 +79,8 @@ namespace CampfireAdventure.GameInput
                 InteractRequested?.Invoke();
                 return;
             }
+
+            if (!actionKeysEnabled) return;
 
             for (int i = 0; i < bindings.Count; i++)
             {

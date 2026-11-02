@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a63f948f8393fc4dbeee9a779a3201d, type: 3}
+  m_Name: WallArmSlideSettings
+  m_EditorClassIdentifier: Assembly-CSharp::ExerciseGame.Exercises.WallArmSlide.WallArmSlideSettings
+  minimumConfidence: 0.5
+  startingWristAboveShoulderMin: 0.02
+  startingElbowAboveShoulderMax: 0
+  raisedWristAboveShoulderMin: 0.02
+  raisedElbowAboveShoulderMin: 0.02
+  requiredHoldTime: 0.5
+  raisedStableFrames: 3
+  requiredReturnTime: 0.3
+  returnStableFrames: 5
+  startingElbowMinAngle: 0
+  startingElbowMaxAngle: 180
+  startingArmElevationMax: 180
+  minimumMovementAngle: 5
+  movementStableFrames: 3
+  maximumOverheadAngle: 20
+  minimumElbowExtension: 150
+  minimumWristAboveShoulder: 0.02
+  targetStableFrames: 5
+  maximumHorizontalDrift: 0.25
+  requireBothArms: 1
+  returnStableFramesLegacy: 3
