@@ -321059,7 +321059,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 430, y: 20}
+  m_AnchoredPosition: {x: 68, y: 20}
   m_SizeDelta: {x: 760, y: 620}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1606619244
@@ -321075,7 +321075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.08, g: 0.065, b: 0.05, a: 0.9}
+  m_Color: {r: 0.08, g: 0.065, b: 0.05, a: 0.95}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -336224,6 +336224,7 @@ MonoBehaviour:
   objectives: {fileID: 303936265}
   stats: {fileID: 1743918234}
   session: {fileID: 1488216273}
+  exercise: {fileID: 1446978572}
   group: {fileID: 1684316004}
   resultsText: {fileID: 1405362030}
   playAgainButton: {fileID: 818009691}

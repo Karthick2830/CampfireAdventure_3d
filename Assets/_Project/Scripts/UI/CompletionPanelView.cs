@@ -21,6 +21,7 @@ namespace CampfireAdventure.UI
         [SerializeField] private ObjectiveManager objectives;
         [SerializeField] private AdventureStats stats;
         [SerializeField] private AdventureSession session;
+        [SerializeField, Tooltip("Optional: adds the validated rep count to the results.")] private ExerciseGame.Core.Exercise.ExerciseManager exercise;
 
         [Header("UI")]
         [SerializeField] private CanvasGroup group;
@@ -83,6 +84,11 @@ namespace CampfireAdventure.UI
               .Append("Wood gathered:  <b>").Append(stats.WoodCollected).Append("</b>\n")
               .Append("Stones gathered:  <b>").Append(stats.StonesCollected).Append("</b>\n")
               .Append("Ignition tries:  <b>").Append(stats.IgniteAttempts).Append("</b>");
+            if (exercise != null)
+            {
+                int target = exercise.TargetRepsPerSet * exercise.TargetSets;
+                sb.Append("\nTotal reps:  <b>").Append(exercise.TotalReps).Append(" / ").Append(target).Append("</b>");
+            }
             resultsText.text = sb.ToString();
 
             targetAlpha = 1f;
